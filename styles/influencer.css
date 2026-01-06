@@ -12,7 +12,6 @@
   font-family: "Manrope", sans-serif;
 }
 
-
 /* UNIVERSAL STYLES */
 * {
   margin: 0;
@@ -21,108 +20,132 @@
 }
 
 /* SHARED STYLES */
-.main-color{
-    color: rgba(58, 58, 58, 1);
+.main-color {
+  color: rgba(58, 58, 58, 1);
 }
 
-.btn-primary{
+.btn-primary {
   border: none;
-    border-radius: 40px;
-    background-color: rgba(224, 44, 109, 1);
-    padding: 10px 24px;
-    font-weight: 700;
-    color: white;
+  border-radius: 40px;
+  background-color: rgba(224, 44, 109, 1);
+  padding: 10px 24px;
+  font-weight: 700;
+  color: white;
 }
-
 
 /* NAVBAR AND HEADER STYLES */
-header{
-    max-width: 1200px;
-    margin: 0 auto;
+header {
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 50px;
-}
-
-.navbar h2{
-    font-size: 24px;
-    font-weight: 700;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
 }
 
-.nav-items{
-    display: flex;
-    gap: 34px;
-    align-items: center;
+.navbar h2 {
+  font-size: 24px;
+  font-weight: 700;
 }
 
-.nav-items li{
-    list-style: none;
+.nav-items {
+  display: flex;
+  gap: 34px;
+  align-items: center;
 }
 
-.nav-items li a{
-    text-decoration: none;
-    color: rgba(58, 58, 58, 1);
-    font-weight: 600;
-
+.nav-items li {
+  list-style: none;
 }
 
-.banner{
-    margin-top: 120px;
-    padding: 40px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 130px;
-    background-image: url(../images/Circle\ design.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right center;
+.nav-items li a {
+  text-decoration: none;
+  color: rgba(58, 58, 58, 1);
+  font-weight: 600;
 }
 
-.banner-content{
+/* BANNER SECTION STYLES */
+.banner {
+  margin-top: 120px;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 130px;
+  background-image: url(../images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+}
+
+.banner-content {
   max-width: 582px;
 }
 
-.banner-content h1{
-    font-size: 52px;
-    font-weight: 700;
-    color: rgba(58, 58, 58, 1);
-    margin-bottom: 16px;
+.banner-content h1 {
+  font-size: 52px;
+  font-weight: 700;
+  color: rgba(58, 58, 58, 1);
+  margin-bottom: 16px;
 }
 
-.banner-content p{
+.banner-content p {
   font-weight: 600;
   color: rgba(58, 58, 58, 1);
   line-height: 25px;
   margin-bottom: 16px;
 }
 
-.banner-image img{
+.banner-image img {
   width: 100%;
 }
 
+/* COMPANY SECTION STYLES */
+.company {
+  max-width: 1110px;
+  margin: 0px auto;
+  padding: 120px 0;
+}
+
+.company hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    rgba(192, 204, 218, 0.1),
+    rgba(192, 204, 218, 0.6),
+    rgba(192, 204, 218, 0.1)
+  );
+}
+
+.company-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 60px;
+  padding: 40px 20px;
+}
 
 /* MOBILE RESPONSIVE STYLES */
 @media screen and (max-width: 576px) {
-  .navbar{
+  .navbar {
     flex-direction: column;
     gap: 40px;
     margin: 0px 10px;
   }
 
-  .navbar h2{
+  .navbar h2 {
     font-size: 26px;
   }
 
-  .nav-items{
+  .nav-items {
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .banner{
+  .banner {
     flex-direction: column-reverse;
     background-position: top;
     margin: 0 10px;
@@ -132,38 +155,60 @@ header{
     margin-bottom: 50px;
   }
 
-  .banner-content{
+  .banner-content {
     text-align: center;
   }
 
-  .banner-content h1{
+  .banner-content h1 {
     font-size: 30px;
   }
 
-  .banner-content p br{
+  .banner-content p br {
     display: none;
+  }
+
+  /* COMPANY SECTION STYLES */
+  .company {
+    padding: 50px 0;
+    margin: 0 10px;
+  }
+  .company-container {
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 10px;
   }
 }
 
 /* LAPTOP RESPONSIVE STYLES */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-  .navbar{
+  .navbar {
     margin: 0 30px;
     padding-top: 50px;
   }
 
-  .banner{
+  .banner {
     margin: 0px 30px;
     margin-top: 120px;
     gap: 100px;
   }
 
-  .banner-content h1{
+  .banner-content h1 {
     font-size: 46px;
   }
 
-  .banner-image img{
+  .banner-image img {
     padding-right: 30px;
   }
 
+  /* COMPANY SECTION STYLES */
+  .company {
+    margin: 0px 30px;
+  }
+
+  .company-container {
+    flex-wrap: wrap;
+    gap: 50px;
+    /* padding: 30px ; */
+    padding: 40px 0;
+  }
 }
